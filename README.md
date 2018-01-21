@@ -1,4 +1,4 @@
-# swift 3.1
+# swift 4.0.3
 
-![Build Status](https://travis-ci.org/cyber-dojo-languages/swift-3.1.svg?branch=master)
+![Build Status](https://travis-ci.org/cyber-dojo-languages/swift-4.0.3.svg?branch=master)
 

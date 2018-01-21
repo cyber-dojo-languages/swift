@@ -1,4 +1,4 @@
-FROM  cyberdojofoundation/ubuntu-build-essential:14.04
+FROM  cyberdojofoundation/ubuntu-build-essential:16.04
 LABEL maintainer=byran@adgico.co.uk
 
 ADD install.sh .
@@ -6,4 +6,4 @@ ADD install.sh .
 RUN ./install.sh && \
     rm -f install.sh
 
-RUN swiftc --version | grep -q 3.1
+RUN swiftc --version | grep -q 4.0.3
