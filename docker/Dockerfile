@@ -5,5 +5,3 @@ ADD install.sh .
 
 RUN ./install.sh && \
     rm -f install.sh
-
-RUN swiftc --version | grep -q 4.0.3
