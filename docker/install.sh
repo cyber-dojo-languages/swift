@@ -1,5 +1,4 @@
-#!/bin/bash
-set -e
+#!/bin/bash -Eeu
 
 readonly CLANG_VERSION=3.6
 
