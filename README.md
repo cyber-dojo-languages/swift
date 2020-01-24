@@ -1,6 +1,7 @@
-# Swift
 
-![Build Status](https://travis-ci.org/cyber-dojo-languages/swift.svg?branch=master)
+[![CircleCI](https://circleci.com/gh/cyber-dojo-languages/swift.svg?style=svg)](https://circleci.com/gh/cyber-dojo-languages/swift)
+
+## image_name="cyberdojofoundation/swift"
 
 [Version=4.0.3](https://github.com/cyber-dojo-languages/swift/blob/master/check_version.sh)
 
