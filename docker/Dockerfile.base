@@ -1,4 +1,4 @@
-FROM cyberdojofoundation/ubuntu-build-essential:18.04
+FROM cyberdojofoundation/ubuntu-build-essential-18-04
 LABEL maintainer=byran@adgico.co.uk
 LABEL maintainer=jon@jaggersoft.com
 
