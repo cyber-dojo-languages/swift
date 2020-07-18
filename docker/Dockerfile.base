@@ -2,9 +2,10 @@ FROM cyberdojofoundation/ubuntu-build-essential-18-04:a6578e6
 LABEL maintainer=byran@adgico.co.uk
 LABEL maintainer=jon@jaggersoft.com
 
+# https://swift.org/download/#releases
 ENV SWIFT_OS_MAJOR=18
 ENV SWIFT_OS_MINOR=04
-ENV SWIFT_VERSION=5.1.3
+ENV SWIFT_VERSION=5.2.4
 
 COPY install.sh .
 RUN ./install.sh && rm -f install.sh
