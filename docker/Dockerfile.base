@@ -1,11 +1,10 @@
-FROM cyberdojofoundation/ubuntu-build-essential-18-04:a6578e6
+FROM ghcr.io/cyber-dojo-languages/ubuntu-build-essential-24-04:8ab6c08
 LABEL maintainer=byran@adgico.co.uk
 LABEL maintainer=jon@jaggersoft.com
 
-# https://swift.org/download/#releases
-ENV SWIFT_OS_MAJOR=18
+ENV SWIFT_OS_MAJOR=24
 ENV SWIFT_OS_MINOR=04
-ENV SWIFT_VERSION=5.2.4
+ENV SWIFT_VERSION=6.0.3
 
 COPY install.sh .
 RUN ./install.sh && rm -f install.sh

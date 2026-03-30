@@ -1,4 +1,5 @@
-#!/bin/bash -Eeu
+#!/usr/bin/env bash
+set -Eeu
 
 readonly REGEX="image_name\": \"(.*)\""
 readonly JSON=`cat docker/image_name.json`
@@ -6,8 +7,8 @@ readonly JSON=`cat docker/image_name.json`
 readonly IMAGE_NAME="${BASH_REMATCH[1]}"
 
 readonly MY_DIR="$( cd "$( dirname "${0}" )" && pwd )"
-readonly EXPECTED=5.2.4
-readonly ACTUAL=$(docker run --rm -it ${IMAGE_NAME} sh -c 'swiftc --version')
+readonly EXPECTED=6.0.3
+readonly ACTUAL=$(docker run --rm -i ${IMAGE_NAME} sh -c 'swiftc --version')
 
 if echo "${ACTUAL}" | grep -q "${EXPECTED}"; then
   echo "VERSION CONFIRMED as ${EXPECTED}"
