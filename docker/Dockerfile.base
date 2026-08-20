@@ -4,9 +4,9 @@ LABEL maintainer=jon@jaggersoft.com
 
 ENV SWIFT_OS_MAJOR=24
 ENV SWIFT_OS_MINOR=04
-ENV SWIFT_VERSION=6.0.3
+ENV SWIFT_VERSION=6.3.3
 
 COPY install.sh .
 RUN ./install.sh && rm -f install.sh
 
-ENV PATH=/swift-${SWIFT_VERSION}-RELEASE-ubuntu${SWIFT_OS_MAJOR}.${SWIFT_OS_MINOR}/usr/bin:${PATH}
+ENV PATH=/swift/usr/bin:${PATH}
